@@ -1,0 +1,53 @@
+		Name: 		 Id: 		 Age: 		 Designation: 		  Department: 		  Salary:
+
+
+			Jane			1			22			Manager			ece			78900.0
+
+
+
+			rita			2			31			devloper			ece			56900.0
+
+
+
+			Dan			3			23			tester			oracle			37000.0
+
+
+
+			eva			4			29			developer			cse			45678.0
+
+
+
+			Kate			5			30			Lead			clouds			34567.0
+
+
+
+			ava			6			21			tester			ece			56789.0
+
+
+
+			tia			7			25			devlepor			ece			23456.0
+
+
+
+			dan			8			28			manager			clouds			45678.0
+
+
+
+			Anu			9			32			devloper			ece			12000.0
+
+
+
+			Ram			10			26			developer			clouds			67890.0
+
+
+
+			Dan			11			23			tester			oracle			37000.0
+
+
+
+			Ram			12			26			developer			clouds			67890.0
+
+
+
+			jON			13			129			DEVLOPER			clouds			56789.0
+
