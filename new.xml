@@ -9,7 +9,7 @@
 	</bean>
 
 
-<bean id="e" class="labs.Spring.EmployeeSpring" autowire="byName">
+<bean id="e" class="labs.Spring.EmployeeAddress">
 		<!-- Constructor resolution based on name -->
 		<constructor-arg name="id"
 			value="1" />
@@ -36,20 +36,19 @@
 			</list>
 		</property>	
 		
-		<!-- Auto-wiring by name 
-		<property name="address" ref="a" /> 
-			  	<property name="date" ref="d" />  -->
+		<property name="address" >
 		
-	</bean>
-	
-	
-<bean id="address" class="labs.Spring.Address" >
+		<bean id="address" class="labs.Spring.Address" >
 		<property name="city" value="Blore" />
 				<property name="country" value="India" />
 				<property name="pin" value="560096" />
+				<property name="date" ref="d" />
 		
 	</bean>
-<bean id="date" class="java.time.LocalDate" factory-method="parse">
+</property>
+		
+	</bean>
+<bean id="d" class="java.time.LocalDate" factory-method="parse">
 <constructor-arg  value="2018-09-09"></constructor-arg>
 </bean>			
 </beans>

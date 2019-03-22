@@ -8,10 +8,13 @@ public static void main(String args[]) {
 	//Greetings greetings = new Greetings();
     //greetings.getMsg();
 
-
+//step1: creates ioc container
 ApplicationContext context = new ClassPathXmlApplicationContext("bean-config.xml");
 
-Greetings greetings=(Greetings)context.getBean("greetings");
+//access Greetings bean
+Greetings greetings=(Greetings)context.getBean("greetings1");
+
+//prints the message
 System.out.println(greetings.getMsg());
 
 }
