@@ -4,7 +4,7 @@ import assignments.CoreJava.lambda.Validate.ValidateEmployee;
 
 import java.util.function.Predicate;
 
-import  assignments.CoreJava.EmployeeManager1.Employees1;
+import  labs.CoreJava.generics.Employees1;
 
 public class EmployeeValidationMain {
 	

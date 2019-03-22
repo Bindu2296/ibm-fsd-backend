@@ -4,12 +4,10 @@
    http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<!-- Bean instantiation with default constructor -->
-	<bean id="greetings1" class="labs.Spring.Greetings" >
-		<property name="msg" value="Hello World message from config file" />
-	</bean>
+	
 
 
-<bean id="e" class="labs.Spring.EmployeeSpring" autowire="byName">
+<bean id="e" class="assignments.CoreJava.EmployeeManagementApp02.Employees" autowire="byName">
 		<!-- Constructor resolution based on name -->
 		<constructor-arg name="id"
 			value="1" />
@@ -51,7 +49,5 @@
 	</bean>
 <bean id="date" class="java.time.LocalDate" factory-method="parse">
 <constructor-arg  value="2018-09-09"></constructor-arg>
-</bean>		
-
-			
+</bean>			
 </beans>

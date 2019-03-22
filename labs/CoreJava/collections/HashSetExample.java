@@ -1,7 +1,7 @@
 package labs.CoreJava.collections;
 import java.util.*;
 
-import assignments.CoreJava.EmployeeManager1.Employees1;
+import labs.CoreJava.generics.Employees1;
 
 
 public class HashSetExample implements Comparator {

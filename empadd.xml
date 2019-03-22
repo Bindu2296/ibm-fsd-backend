@@ -2,14 +2,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans.xsd">
-
-	<!-- Bean instantiation with default constructor -->
-	<bean id="greetings1" class="labs.Spring.Greetings" >
-		<property name="msg" value="Hello World message from config file" />
-	</bean>
-
-
-<bean id="e" class="labs.Spring.EmployeeSpring" autowire="byName">
+<bean id="emp" class="assignments.Springs.EmployeeSpring" autowire="byName">
 		<!-- Constructor resolution based on name -->
 		<constructor-arg name="id"
 			value="1" />
@@ -43,7 +36,7 @@
 	</bean>
 	
 	
-<bean id="address" class="labs.Spring.Address" >
+<bean id="address" class="assignments.Springs.Address" >
 		<property name="city" value="Blore" />
 				<property name="country" value="India" />
 				<property name="pin" value="560096" />
@@ -51,7 +44,5 @@
 	</bean>
 <bean id="date" class="java.time.LocalDate" factory-method="parse">
 <constructor-arg  value="2018-09-09"></constructor-arg>
-</bean>		
-
-			
+</bean>	
 </beans>

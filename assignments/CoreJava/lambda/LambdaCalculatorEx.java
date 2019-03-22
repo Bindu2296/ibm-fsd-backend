@@ -4,10 +4,10 @@ import java.util.function.BiFunction;
 
 import java.util.function.Consumer;
 
-public class LambdaExpressionEx {
+public class LambdaCalculatorEx {
 
 	   public static void main(String args[]) {
-		   LambdaExpressionEx lamExp = new LambdaExpressionEx();
+		   LambdaCalculatorEx lamExp = new LambdaCalculatorEx();
 			
 	      //with type declaration
 	        BiFunction<Integer, Integer, Integer> addition = (a, b) -> a + b; 

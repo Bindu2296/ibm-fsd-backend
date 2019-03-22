@@ -1,4 +1,4 @@
-package labs.CoreJava.collections;
+package assignments.CoreJava.EmployeeManager1;
 import java.awt.DisplayMode;
 import java.util.ArrayList;
 import java.util.List;

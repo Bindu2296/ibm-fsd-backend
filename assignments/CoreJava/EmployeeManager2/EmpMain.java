@@ -1,4 +1,4 @@
-package labs.CoreJava.generics;
+package assignments.CoreJava.EmployeeManager2;
 
 import java.util.Arrays;
 import java.util.*;

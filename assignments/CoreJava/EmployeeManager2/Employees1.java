@@ -1,4 +1,4 @@
-package labs.CoreJava.generics;
+package assignments.CoreJava.EmployeeManager2;
 
 public class Employees1<T> {
 	private  int id;
