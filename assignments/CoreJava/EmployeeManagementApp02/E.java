@@ -32,13 +32,35 @@ import java.util.stream.Collectors;
 
 public class E {
 	//TreeMap<Integer,E> emplist=new TreeMap<Integer,E>();
-	 static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-	 static final String DB_URL = "jdbc:mysql://localhost/jdbctraining";
+	
+	
+	  String JDBC_DRIVER ;
+	 String DB_URL ;
 
 	// Database credentials
-	 static final String USER = "root";
-	 static final String PASS = "pass@word1";
+	 String USER ;
+ String PASS ;
 	 Connection conn=null;
+	 Statement stmt=null;
+	E( String JDBC_DRIVER, String DB_URL, String USER,String PASS){
+		this.JDBC_DRIVER=JDBC_DRIVER;
+		this.DB_URL=DB_URL;
+		this.USER=USER;
+		this.PASS=PASS;
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			conn=DriverManager.getConnection(DB_URL, USER, PASS);
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
 
 	public Integer id;
 	 static Scanner sc=new Scanner(System.in);
@@ -46,16 +68,7 @@ public class E {
 	 
 	 public E(int age, String eName, String dept, String designation, int id, double sal)
 	 {
-			try {
-				Class.forName("com.mysql.jdbc.Driver");
-				conn=DriverManager.getConnection(DB_URL, USER, PASS);
-			} catch (ClassNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			
 
 	 }
 	 
@@ -378,7 +391,7 @@ public class E {
 		String query9="select department,avg(age) as average_age from EmployeeManagement group by department";
 		
 
-		Statement stmt;
+		
 		ResultSet rs;
 		try {
 			stmt = conn.createStatement();

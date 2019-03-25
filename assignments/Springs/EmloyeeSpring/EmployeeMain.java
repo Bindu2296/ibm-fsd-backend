@@ -1,4 +1,4 @@
-package assignments.Springs;
+package assignments.Springs.EmloyeeSpring;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

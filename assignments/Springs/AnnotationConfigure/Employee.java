@@ -1,4 +1,4 @@
-package labs.Spring.AnnotationConfigure;
+package assignments.Springs.AnnotationConfigure;
 
 
 

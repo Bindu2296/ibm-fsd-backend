@@ -1,4 +1,4 @@
-package labs.CoreJava.reflections;
+package assignments.CoreJava.reflections;
 
 public class ReflectionEx {
 

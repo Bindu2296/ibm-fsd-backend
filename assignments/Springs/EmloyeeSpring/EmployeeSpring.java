@@ -1,4 +1,4 @@
-package assignments.Springs;
+package assignments.Springs.EmloyeeSpring;
 
 import java.time.LocalDate;
 import java.util.List;

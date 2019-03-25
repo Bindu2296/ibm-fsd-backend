@@ -1,4 +1,4 @@
-package assignments.CoreJava.EmployeeManagementApp02;
+package assignments.Springs.EmployeeManagementApp02;
 
 
 
@@ -10,6 +10,9 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
+
 public class EmpMain {
 
 	static Scanner sc=new Scanner(System.in);	
@@ -17,10 +20,10 @@ public class EmpMain {
 	static char choice;
 	static boolean flag=true;
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		AbstractApplicationContext context = new AnnotationConfigApplicationContext(EmpConfigure.class);
-		   EmpService e = (EmpService) context.getBean("employee");			do {
+		   EmpService e = (EmpService) context.getBean("employee");			
+		   do {
 				System.out.println("Choose an action: ");
 				System.out.println("1. Add Employee");
 				System.out.println("2. Update Employee");

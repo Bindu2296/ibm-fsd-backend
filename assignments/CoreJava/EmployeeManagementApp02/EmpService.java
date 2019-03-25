@@ -4,12 +4,27 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 public class EmpService {
-E dao=new E();
+E dao;
 	
 
-	public EmpService(E employeeDao) {
+	public EmpService(E dao) {
 	// TODO Auto-generated constructor stub
+		this.dao=dao;
 }
+
+	
+	
+	public E getDao() {
+		return dao;
+	}
+
+
+
+	public void setDao(E dao) {
+		this.dao = dao;
+	}
+
+
 
 	public  void addEmployee( ) throws SQLException {
 		// TODO Auto-generated method stub

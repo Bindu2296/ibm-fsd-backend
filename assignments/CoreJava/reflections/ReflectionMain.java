@@ -1,4 +1,4 @@
-package labs.CoreJava.reflections;
+package assignments.CoreJava.reflections;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;

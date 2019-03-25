@@ -1,4 +1,4 @@
-package assignments.Springs;
+package assignments.Springs.EmloyeeSpring;
 
 public class Address {
 private String city;

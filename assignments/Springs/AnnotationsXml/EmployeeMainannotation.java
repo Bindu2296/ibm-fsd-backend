@@ -1,4 +1,4 @@
-package labs.Spring.AnnotationsXml;
+package assignments.Springs.AnnotationsXml;
 
 	import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;

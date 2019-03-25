@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 public class EmpConfigure {
 	@Bean
 	public E employeeDao() {
-		return new E();
+		return new E("com.mysql.jdbc.Driver", "jdbc:mysql://localhost/jdbctraining","root","pass@word1");
 	}
 	@Bean
 	public EmpService employee() {

@@ -9,5 +9,6 @@
 	<classpathentry kind="lib" path="D:/Java1/src/assignments/CoreJava/EmployeeManagementApp02/lib/spring-context-5.1.5.RELEASE.jar"/>
 	<classpathentry kind="lib" path="D:/Java1/src/assignments/CoreJava/EmployeeManagementApp02/lib/spring-core-5.1.5.RELEASE.jar"/>
 	<classpathentry kind="lib" path="D:/Java1/src/assignments/CoreJava/EmployeeManagementApp02/lib/spring-expression-5.1.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Java1/src/assignments/CoreJava/EmployeeManagementApp02/lib/mysql-connector-java-5.1.46.jar"/>
 	<classpathentry kind="output" path="labs/target/classes"/>
 </classpath>

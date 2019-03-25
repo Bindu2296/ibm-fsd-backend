@@ -1,4 +1,4 @@
-package labs.Spring.AnnotationsXml;
+package assignments.Springs.AnnotationsXml;
 
 
 import org.springframework.beans.factory.annotation.Value;

@@ -1,4 +1,4 @@
-package assignments.CoreJava.EmployeeManagementApp02;
+package assignments.Springs.EmployeeManagementApp02;
 
 
     
