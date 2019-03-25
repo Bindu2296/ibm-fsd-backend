@@ -3,6 +3,7 @@ package assignments.CoreJava.EmployeeManagementApp02;
 
 
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.Scanner;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
@@ -19,6 +20,7 @@ public class EmpMain {
 		// TODO Auto-generated method stub
 		
 		E es=new E(op, null, null, null, op, op);
+		EmpService e=new EmpService();
 			do {
 				System.out.println("Choose an action: ");
 				System.out.println("1. Add Employee");
@@ -33,33 +35,73 @@ public class EmpMain {
 				
 					switch(sc.nextInt())
 					{
-					case 1: es.addEmployee();
+					case 1: try {
+							e.addEmployee();
+						} catch (SQLException e2) {
+							// TODO Auto-generated catch block
+							e2.printStackTrace();
+						}
 							break;
 					case 2: System.out.println("Enter employee id:");
-							es.updateEmployee();
+						try {
+							e.updateEmployee();
+						} catch (SQLException e2) {
+							// TODO Auto-generated catch block
+							e2.printStackTrace();
+						}
 							break;
 					case 3: System.out.println("Enter employee id:");
-							es.viewEmployeeById(sc.nextInt());
+						try {
+							e.viewEmployeeById(sc.nextInt());
+						} catch (SQLException e2) {
+							// TODO Auto-generated catch block
+							e2.printStackTrace();
+						}
 							break;
-					case 4:	es.viewEmployees();
+					case 4:	try {
+							e.viewEmployees();
+						} catch (SQLException e2) {
+							// TODO Auto-generated catch block
+							e2.printStackTrace();
+						}
 							break;
 					case 5: System.out.println("Enter employee id:");
-							es.deleteEmployee(sc.nextInt());
+						try {
+							e.deleteEmployee(sc.nextInt());
+						} catch (SQLException e2) {
+							// TODO Auto-generated catch block
+							e2.printStackTrace();
+						}
 							break;
-					case 6:es.statistics();
+					case 6:try {
+							e.statistics();
+						} catch (SQLException e2) {
+							// TODO Auto-generated catch block
+							e2.printStackTrace();
+						}
 							break;
 					case 7:try {
-							es.Import();
-						} catch (IOException e) {
+							try {
+								e.Import();
+							} catch (SQLException e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							}
+						} catch (IOException e1) {
 							// TODO Auto-generated catch block
-							e.printStackTrace();
+							e1.printStackTrace();
 						}
 					break;
 					case 8:try {
-						es.Export();
-					} catch (IOException e) {
+						try {
+							e.Export();
+						} catch (SQLException e1) {
+							// TODO Auto-generated catch block
+							e1.printStackTrace();
+						}
+					} catch (IOException e1) {
 						// TODO Auto-generated catch block
-						e.printStackTrace();
+						e1.printStackTrace();
 					}
 				break;
 					default:System.out.println("choose valid action");

@@ -63,6 +63,14 @@ public class E {
 	 
 	
 
+	public E() {
+		// TODO Auto-generated constructor stub
+	}
+
+
+
+
+
 	public void addEmployee()
 	{
 		System.out.println("Enter Employee Name:");
